@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Bootstrapper bootstrapper;
+    private Bootstrapper bootstrapper;
 
     void Start()
     {
@@ -39,6 +39,13 @@ public class Player : MonoBehaviour
     void Shoot()
     {
         if (bootstrapper.startShoot != null && bootstrapper.objectPool != null && Input.GetKey(KeyCode.Mouse0) && bootstrapper.timeShoot >= bootstrapper.timeNextShoot && bootstrapper.currentBullet > 0)
+        {
+            GameObject bullet = bootstrapper.objectPool.GetObject();
+            bullet.transform.position = bootstrapper.startShoot.position;
+            bootstrapper.currentBullet--;
+            bootstrapper.timeShoot = 0;
+        }
+        else if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             GameObject bullet = bootstrapper.objectPool.GetObject();
             bullet.transform.position = bootstrapper.startShoot.position;

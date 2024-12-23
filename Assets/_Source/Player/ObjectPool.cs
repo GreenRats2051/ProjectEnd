@@ -6,8 +6,6 @@ public class ObjectPool : MonoBehaviour
 {
     public GameObject bullet;
     public int quantity;
-    public bool autoExpand;
-
     Queue<GameObject> queue;
 
     void Start()

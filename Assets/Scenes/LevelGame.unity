@@ -1493,7 +1493,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 566502817}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 785790581}
+        m_TargetAssemblyTypeName: EndGame, Assembly-CSharp
+        m_MethodName: Retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &566502817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1772,6 +1784,7 @@ GameObject:
   - component: {fileID: 785790580}
   - component: {fileID: 785790579}
   - component: {fileID: 785790578}
+  - component: {fileID: 785790581}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -1865,6 +1878,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &785790581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785790576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 901894af3c8b9b146b33f43d2c1af3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!850595691 &871495656
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -2299,7 +2324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &901789311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2320,7 +2345,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2445,7 +2470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 576905dae76950a438aaff82ff9df1a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bootstrapper: {fileID: 1846733558}
 --- !u!4 &946816479
 Transform:
   m_ObjectHideFlags: 0
@@ -3621,7 +3645,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 9102638810476228998, guid: 2592ced5db8b8b044b12476bfbff7459, type: 3}
   quantity: 10
-  autoExpand: 0
 --- !u!1 &1642817838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4416,7 +4439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a757c88edf2054c814632322021a2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bootstrapper: {fileID: 1846733558}
 --- !u!65 &1846733561
 BoxCollider:
   m_ObjectHideFlags: 0

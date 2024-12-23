@@ -5,8 +5,8 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public Rigidbody rigidbody;
-    public Bootstrapper bootstrapper;
-    public float timeReturn;
+    private Bootstrapper bootstrapper;
+    private float timeReturn;
 
     void Start()
     {
